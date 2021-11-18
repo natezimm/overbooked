@@ -1,16 +1,20 @@
 import React from 'react';
 import { Card, CardImg, CardImgOverlay, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import CardHeader from 'reactstrap/lib/CardHeader';
+import CardBody from 'reactstrap/lib/CardBody';
+import Button from 'reactstrap/lib/Button';
 
 function RenderLibraryItem({book}) {
     return (
-        <Card>
-            <Link to={`/library/${book.id}`}>
+        <Card> 
                 <CardImg width="100%" src={book.image} alt={book.name} />
-                <CardImgOverlay>
+                <CardBody>
                     <CardTitle>{book.name}</CardTitle>
-                </CardImgOverlay>
-            </Link>
+                </CardBody>
+                <Button>
+                    <Link to={`/library/${book.id}`}></Link>    
+                </Button>
         </Card>        
     )
 }
@@ -18,7 +22,7 @@ function RenderLibraryItem({book}) {
 function Library(props) {
     const library = props.books.map(book => {
         return (
-            <div key={book.id} className="col-md-5 m-1">
+            <div key={book.id} className="col-md-5 m-1 library-book-card">
                 <RenderLibraryItem book={book} />
             </div>
         );

@@ -51,6 +51,12 @@ img.blur {
   background-color: #41B3A3;
 }
 
+/* Home */
+
+.promos {
+  display: block;
+}
+
 /* Cards */
 
 .card-title {
@@ -74,6 +80,14 @@ img.blur {
 .partners li {
   padding-bottom: 1rem;
 
+}
+
+/* Library */
+
+.library-book-card img {
+  width:  300px;
+  height: 500px;
+  object-fit: cover;
 }
 
 /* Footer */

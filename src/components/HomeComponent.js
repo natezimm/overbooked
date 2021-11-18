@@ -16,15 +16,10 @@ function RenderCard({item}) {
 function Home(props) {
     return (
         <div className="container">
-            <div className="row">
-                <div className="col-md m-1">
-                    <RenderCard item={props.book} />
-                </div>
-                <div className="col-md m-1">
-                    <RenderCard item={props.promotion} />
-                </div>
-                <div className="col-md m-1">
-                    <RenderCard item={props.partner} />
+            <h1>Come join our book club</h1>
+            <div className="row promos">
+                <div className="col col-md-4">
+                    {props.promotions.map((promo) => <RenderCard item={promo} />)}
                 </div>
             </div>
         </div>

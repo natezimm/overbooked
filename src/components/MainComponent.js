@@ -27,9 +27,7 @@ class Main extends Component {
         const HomePage = () => {
             return (
                 <Home
-                    book={this.state.books.filter(book => book.featured)[0]}
-                    promotion={this.state.promotions.filter(promotion => promotion.featured)[0]}
-                    partner={this.state.partners.filter(partner => partner.featured)[0]}
+                    promotions={this.state.promotions}
                 />
             );
         };
