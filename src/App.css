@@ -54,7 +54,7 @@ img.blur {
 /* Home */
 
 .promos {
-  display: block;
+  display: flex;
 }
 
 /* Cards */

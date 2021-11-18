@@ -17,8 +17,8 @@ function Home(props) {
     return (
         <div className="container">
             <h1>Come join our book club</h1>
-            <div className="row promos">
-                <div className="col col-md-4">
+            <div className="row">
+                <div className="col-xs-3 promos">
                     {props.promotions.map((promo) => <RenderCard item={promo} />)}
                 </div>
             </div>
