@@ -44,11 +44,10 @@ class Header extends Component {
                             <img src="/assets/images/book-banner.jpg" class="blur" alt="blur-img"></img>
                         </div>
                         <div class="container text-white">
-                            <h1 class="display-4">Overbooked</h1>
+                            <h1 class="display-4">Overbooked Book Club</h1>
                             <p class="lead">Reading is your passport to the world.</p>
                             <hr class="my-4"></hr>
                             <p>"Books are the plane, and the train, and the road. They are the destination, and the journey. They are home." —Anna Quindlen</p>
-                            <a class="btn btn-primary btn-lg" href="/" role="button">Learn more</a>
                         </div>
                     </div>
                 </Jumbotron>

@@ -27,6 +27,7 @@ class Main extends Component {
         const HomePage = () => {
             return (
                 <Home
+                    bookOfTheMonth={this.state.books.filter(book => book.featured)[0]}
                     promotions={this.state.promotions}
                 />
             );

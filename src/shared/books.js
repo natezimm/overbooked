@@ -12,7 +12,7 @@ export const BOOKS = [
         name:"The Hitchhiker's Guide to the Galaxy",
         image: "/assets/images/hitchhikers-guide.jpeg",
         pages: 224,
-        featured: false,
+        featured: true,
         description: "It’s an ordinary Thursday morning for Arthur Dent . . . until his house gets demolished. " + 
         "The Earth follows shortly after to make way for a new hyperspace express route, and Arthur’s best friend has just announced that he’s an alien. After that, things get much, much worse. " +
         "With just a towel, a small yellow fish, and a book, Arthur has to navigate through a very hostile universe in the company of a gang of unreliable aliens. Luckily the fish is quite good at languages. " + 
@@ -33,7 +33,7 @@ export const BOOKS = [
         name:"Dune",
         image: "/assets/images/dune.jpeg",
         pages: 896,
-        featured: true,
+        featured: false,
         description: "Set on the desert planet Arrakis, Dune is the story of the boy Paul Atreides, heir to a noble family tasked with ruling an inhospitable world where the only thing of value is the “spice” melange, " +
         "a drug capable of extending life and enhancing consciousness. Coveted across the known universe, melange is a prize worth killing for.... When House Atreides is betrayed, the destruction of Paul’s family will " +
         "set the boy on a journey toward a destiny greater than he could ever have imagined. And as he evolves into the mysterious man known as Muad’Dib, he will bring to fruition humankind’s most ancient and unattainable dream. " +
