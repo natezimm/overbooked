@@ -38,23 +38,9 @@ class Header extends Component {
     render() {
         return (
             <React.Fragment>
-                <Jumbotron fluid>
-                    <div class="jumbotron jumbotron-fluid bg-dark">
-                        <div class="jumbotron-background">
-                            <img src="/assets/images/book-banner.jpg" class="blur" alt="blur-img"></img>
-                        </div>
-                        <div class="container text-white">
-                            <h1 class="display-4">Overbooked Book Club</h1>
-                            <p class="lead">Reading is your passport to the world.</p>
-                            <hr class="my-4"></hr>
-                            <p>"Books are the plane, and the train, and the road. They are the destination, and the journey. They are home." —Anna Quindlen</p>
-                        </div>
-                    </div>
-                </Jumbotron>
-
-                <Navbar dark sticky="top" expand="md">
-                    <div className="container">
-                        <NavbarBrand className="mr-auto" href="/"><img src="/assets/images/book-logo.png" height="30" width="30" alt="NuCamp Logo" /></NavbarBrand>
+                <Navbar dark sticky="top">
+                        <NavbarBrand className="mr-auto" href="/"><img src="/assets/images/book-logo.png" height="30" width="30" alt="Book Logo" /></NavbarBrand>
+                        <h2 className="site-title mr-auto">overBOOKed Reading Club</h2>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
@@ -79,13 +65,13 @@ class Header extends Component {
                                     </NavLink>
                                 </NavItem>
                             </Nav>
+                            
                             <span className="navbar-text ml-auto">
                                 <Button outline onClick={this.toggleModal}>
                                     <i className="fa fa-sign-in fa-lg" /> Login
                                 </Button>
                             </span>
                         </Collapse>
-                    </div>
                 </Navbar>
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
                     <ModalHeader toggle={this.toggleModal}>Login</ModalHeader>
@@ -112,6 +98,14 @@ class Header extends Component {
                         </Form>
                     </ModalBody>
                 </Modal>
+
+                <Jumbotron fluid>
+                    <div className="jumbotron jumbotron-fluid bg-dark">
+                        <div className="jumbotron-background">
+                            <img src="/assets/images/book-banner.jpg" className="blur" alt="blur-img"></img>
+                        </div>
+                    </div>
+                </Jumbotron>
             </React.Fragment>
         );
     }

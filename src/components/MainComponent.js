@@ -27,7 +27,8 @@ class Main extends Component {
         const HomePage = () => {
             return (
                 <Home
-                    bookOfTheMonth={this.state.books.filter(book => book.featured)[0]}
+                    currentBook={this.state.books.filter(book => book.currentBook)[0]}    
+                    bookOfTheMonth={this.state.books.filter(book => book.bookOfTheMonth)[0]}
                     promotions={this.state.promotions}
                 />
             );

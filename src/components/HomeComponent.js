@@ -22,7 +22,22 @@ function RenderBookOfMonth({book}) {
                 <img top src={book.image} alt={book.name} />
             </div>            
         </div>
+    );
+}
 
+function RenderCurrentBook({book}) {
+    return (
+        <div className="current-book m-1">
+            <div className="col col-xs-4">
+                <img top src={book.image} alt={book.name} />
+            </div>              
+            <div className="col col-xs-4">
+                <h1>What are we reading now?</h1>
+                <h3>{book.name}</h3>                   
+                <p>{book.description}</p>
+            </div>
+          
+        </div>
     );
 }
 
@@ -30,6 +45,9 @@ function Home(props) {
     return (
         <div className="container">
             <h1 className="greeting"><span>You can't be overbooked, only under-read.</span></h1>
+            <div className="row">
+                <RenderCurrentBook book={props.currentBook}/>
+            </div>
             <div className="row">
                 <RenderBookOfMonth book={props.bookOfTheMonth}/>
             </div>
