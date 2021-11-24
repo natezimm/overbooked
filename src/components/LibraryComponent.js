@@ -1,7 +1,6 @@
 import React from 'react';
-import { Card, CardImg, CardImgOverlay, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Card, CardImg, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import CardHeader from 'reactstrap/lib/CardHeader';
 import CardBody from 'reactstrap/lib/CardBody';
 import Button from 'reactstrap/lib/Button';
 
