@@ -194,12 +194,26 @@ img.blur {
   padding-top: 60px;
 }
 
-.footer-links {
+#home-link {
+  color: #2A1B3D;
 }
 
-.footer-social {
-
+#library-link {
+  color: #2A1B3D;
 }
 
-.footer-contact {
+#about-link {
+  color: #2A1B3D;
+}
+
+#contact-link {
+  color: #2A1B3D;
+}
+
+.footer-contact a {
+  color: #2A1B3D;
+}
+
+.footer-contact a:hover {
+  color: #2A1B3D;
 }
