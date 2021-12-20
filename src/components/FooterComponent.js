@@ -15,7 +15,7 @@ function Footer(props) {
                         </ul>
                     </div>
                     <div className="col-4 text-center footer-social">
-                        <h4>Social</h4>
+                        <h4>Connect With Us</h4>
                         <a className="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i className="fa fa-instagram" /></a>{' '}
                         <a className="btn btn-social-icon btn-facebook" href="http://www.facebook.com/"><i className="fa fa-facebook" /></a>{' '}
                         <a className="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i className="fa fa-twitter" /></a>{' '}
