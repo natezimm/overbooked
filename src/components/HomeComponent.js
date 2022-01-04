@@ -2,7 +2,7 @@ import React from 'react';
 
 function RenderPromo({item}) {
     return (
-        <div className="promo">
+        <div className="promo col-md-4 col-sm-6">
             <img className="promo-img" src={item.image} alt={item.name}></img>
             <p className="promo-description">{item.description}</p>
         </div>
@@ -51,7 +51,7 @@ function Home(props) {
                 <RenderBookOfMonth book={props.bookOfTheMonth}/>
             </div>
             <div className="row">
-                <div className="col-xs-2 promos m-1">
+                <div className="promos">
                     {props.promotions.map((promo) => <RenderPromo item={promo} />)}
                 </div>
             </div>

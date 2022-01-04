@@ -61,9 +61,13 @@ img.blur {
   padding-bottom: 10rem;
 }
 
-.promo {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+.promo-img {
+  margin: auto;
+  display: block;
+}
+
+.promo-description {
+  text-align: center;
 }
 
 .book-of-the-month {
@@ -176,15 +180,36 @@ img.blur {
 
 .partners li {
   padding-bottom: 1rem;
-
 }
 
 /* Library */
 
+.library-card {
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+}
+
+.library-card img {
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.library-card-title {
+  text-align: center;
+}
+
 .library-book-card img {
   width:  300px;
   height: 500px;
-  object-fit: cover;
+}
+
+.library-row {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
 }
 
 /* Footer */

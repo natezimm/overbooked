@@ -1,20 +1,17 @@
 import React from 'react';
-import { Card, CardImg, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Card, CardImg, CardImgOverlay, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import CardBody from 'reactstrap/lib/CardBody';
-import Button from 'reactstrap/lib/Button';
 
 function RenderLibraryItem({book}) {
-    return (
-        <Card> 
+    return (    
+        <Card className="library-card">
+            <Link to={`/library/${book.id}`}>
                 <CardImg width="100%" src={book.image} alt={book.name} />
-                <CardBody>
+                <CardImgOverlay className="library-card-title">
                     <CardTitle>{book.name}</CardTitle>
-                </CardBody>
-                <Button>
-                    <Link to={`/library/${book.id}`}></Link>    
-                </Button>
-        </Card>        
+                </CardImgOverlay>
+            </Link>
+    </Card>     
     )
 }
 
@@ -39,7 +36,7 @@ function Library(props) {
                     <hr />
                 </div>
             </div>
-            <div className="row">
+            <div className="row library-row">
                 {library}
             </div>
         </div>
