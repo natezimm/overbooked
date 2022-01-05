@@ -11,7 +11,7 @@ function RenderLibraryItem({book}) {
                     <CardTitle>{book.name}</CardTitle>
                 </CardImgOverlay>
             </Link>
-    </Card>     
+        </Card>     
     )
 }
 

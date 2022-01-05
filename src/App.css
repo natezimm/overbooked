@@ -32,7 +32,6 @@ img.blur {
 	-webkit-filter: blur(4px);
 	filter: blur(4px);
   filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
-
 }
 
 .jumbotron h2 {
@@ -53,6 +52,10 @@ img.blur {
 .greeting {
   padding-top: 5rem;
   text-align: center;
+}
+
+.promo {
+  padding-bottom: 5rem;
 }
 
 .promos {
@@ -190,11 +193,16 @@ img.blur {
 }
 
 .library-card img {
-  padding-top: 4rem;
+  padding-top: 5rem;
   padding-bottom: 1rem;
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+.library-row {
+  margin-top: 3rem;
+  margin-bottom: 10rem;
 }
 
 .library-card-title {
