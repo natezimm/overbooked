@@ -1,3 +1,3 @@
 # Overbooked
 
-https://overbooked.herokuapp.com/home
+https://overbooked.onrender.com
